@@ -7,4 +7,6 @@
     <color name="colorGreen">#13b586</color>
     <color name="colorBlue">#2683c2</color>
     <color name="colorRed">#eb543b</color>
+    <color name="lbl_name">#333333</color>
+    <color name="btn_logut_bg">#ff6861</color>
 </resources>

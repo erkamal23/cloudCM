@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">cloudCM</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
 </resources>
