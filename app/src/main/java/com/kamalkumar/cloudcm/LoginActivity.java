@@ -75,15 +75,15 @@ public class LoginActivity extends AppCompatActivity {
                 String mobileStr = username.getText().toString().trim();
                 String passwordStr = password.getText().toString().trim();
                 if (mobileStr.length() == 0) {
-                    Toast.makeText(getApplicationContext(), "Please Provide Your Mobile Number", Toast.LENGTH_LONG).show();
+                    //Toast.makeText(getApplicationContext(), "Please Provide Your Mobile Number", Toast.LENGTH_LONG).show();
                     username.setError("Please Provide Your Mobile Number");
                     return;
                 }else if (mobileStr.toString().length() != 10) {
-                    Toast.makeText(getApplicationContext(), "Please Provide valid 10 digit mobile number", Toast.LENGTH_LONG).show();
+                    //Toast.makeText(getApplicationContext(), "Please Provide valid 10 digit mobile number", Toast.LENGTH_LONG).show();
                     username.setError("Please Provide valid 10 digit mobile number");
                     return;
                 } else if (passwordStr.toString().length() == 0) {
-                    Toast.makeText(getApplicationContext(), "Please Provide Your Password", Toast.LENGTH_LONG).show();
+                   // Toast.makeText(getApplicationContext(), "Please Provide Your Password", Toast.LENGTH_LONG).show();
                     password.setError("Please Provide Your Password");
                     return;
                 } else {

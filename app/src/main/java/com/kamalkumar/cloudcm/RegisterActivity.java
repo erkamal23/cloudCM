@@ -79,28 +79,28 @@ public class RegisterActivity extends AppCompatActivity {
                 String emailText=email.getText().toString();
                 String passwordText=password.getText().toString();
                 if (nameText.length() == 0) {
-                    Toast.makeText(getApplicationContext(), "Please Provide Your Name", Toast.LENGTH_LONG).show();
+                    //Toast.makeText(getApplicationContext(), "Please Provide Your Name", Toast.LENGTH_LONG).show();
                     name.setError("Please Provide Your Name");
                     return;
                 } else if (phoneText.length() == 0) {
-                    Toast.makeText(getApplicationContext(), "Please Provide Your Mobile Number", Toast.LENGTH_LONG).show();
+                   // Toast.makeText(getApplicationContext(), "Please Provide Your Mobile Number", Toast.LENGTH_LONG).show();
                     phone.setError("Please Provide Your Mobile Number");
                     return;
                 }else if (phoneText.length() != 10) {
-                    Toast.makeText(getApplicationContext(), "Please Provide valid 10 digit mobile number", Toast.LENGTH_LONG).show();
+                  //  Toast.makeText(getApplicationContext(), "Please Provide valid 10 digit mobile number", Toast.LENGTH_LONG).show();
                     phone.setError("Please Provide valid 10 digit mobile number");
                     return;
                 }else if (emailText.length() == 0) {
-                    Toast.makeText(getApplicationContext(), "Please Provide Your Email", Toast.LENGTH_LONG).show();
+                   // Toast.makeText(getApplicationContext(), "Please Provide Your Email", Toast.LENGTH_LONG).show();
                     email.setError("Please Provide Your Email");
                     return;
                 }else if(!android.util.Patterns.EMAIL_ADDRESS.matcher(emailText).matches()) {
                     //Validation for Invalid Email Address
-                    Toast.makeText(getApplicationContext(), "Please Provide Valid Email", Toast.LENGTH_LONG).show();
+                    //Toast.makeText(getApplicationContext(), "Please Provide Valid Email", Toast.LENGTH_LONG).show();
                     email.setError("Please Provide Valid Email");
                     return;
                 }else if (passwordText.length() == 0) {
-                    Toast.makeText(getApplicationContext(), "Please Provide Your Password", Toast.LENGTH_LONG).show();
+                   // Toast.makeText(getApplicationContext(), "Please Provide Your Password", Toast.LENGTH_LONG).show();
                     password.setError("Please Provide Your Password");
                     return;
                 } else {
@@ -152,11 +152,8 @@ public class RegisterActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "User successfully registered. Try login now!", Toast.LENGTH_LONG).show();
 
                         // Launch login activity
-                        Intent intent = new Intent(
-                                RegisterActivity.this,
-                                LoginActivity.class);
-                        startActivity(intent);
                         finish();
+                        overridePendingTransition(R.anim.left_slide_in,R.anim.right_slide_out);
                     } else {
 
                         // Error occurred in registration. Get the error
