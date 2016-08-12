@@ -58,6 +58,17 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         }
+        forgetPasswordLink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myintent=new Intent(view.getContext(), ForgetPasswordActivity.class);
+                startActivity(myintent);
+                overridePendingTransition(R.anim.right_slide_in,R.anim.left_slide_out);
+
+            }
+
+
+        });
         registerLink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

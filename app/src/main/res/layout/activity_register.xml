@@ -12,33 +12,7 @@
         android:background="@color/colorWhite"
         android:orientation="vertical" >
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="48dp"
-            android:background="#13b586"
-            android:orientation="horizontal"
-            android:layout_alignParentTop="true">
 
-            <ImageView android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="@drawable/app_icon"
-                android:layout_marginLeft="10dp"/>
-
-
-            <TextView android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Register"
-                android:textColor="#ffffff"
-                android:layout_marginLeft="25dp"
-                android:textSize="18sp"
-                android:textStyle="bold"
-
-                android:layout_gravity="center_horizontal|center_vertical"/>
-
-
-
-
-        </LinearLayout>
 
 
         <LinearLayout android:layout_width="fill_parent"
@@ -53,11 +27,18 @@
             android:background="@color/colorWhite"
             >
 
-            <ImageView android:layout_width="100dp"
-                android:layout_height="100dp"
+            <ImageView android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:background="@drawable/logo"
                 android:layout_marginTop="15dp"
                 android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30dp"/>
 
             <EditText android:layout_width="fill_parent"
                 android:layout_height="40dp"
@@ -67,7 +48,7 @@
                 android:background="#f3f3f3"
                 android:textColor="@color/colorBlue"
                 android:paddingLeft="5dp"
-                android:layout_marginTop="30dp"/>
+                android:layout_marginTop="15dp"/>
 
             <EditText android:layout_width="fill_parent"
                 android:layout_height="40dp"
