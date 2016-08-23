@@ -25,9 +25,6 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        Toolbar toolbarTop = (Toolbar) findViewById(R.id.toolbar_top);
-        TextView mTitle = (TextView) toolbarTop.findViewById(R.id.toolbar_title);
-
         txtName = (TextView) findViewById(R.id.name);
         txtEmail = (TextView) findViewById(R.id.email);
         btnLogout = (Button) findViewById(R.id.btnLogout);
