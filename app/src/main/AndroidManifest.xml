@@ -24,8 +24,10 @@
             android:name=".RegisterActivity"
             android:windowSoftInputMode="stateHidden" />
         <activity android:name=".HomeActivity" />
-        <activity android:name=".ForgetPasswordActivity"
-            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".ForgetPasswordActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".BaseSlideMenuActivity" />
     </application>
 
 </manifest>

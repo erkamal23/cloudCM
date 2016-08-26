@@ -1,9 +1,7 @@
 package com.kamalkumar.cloudcm;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -13,8 +11,8 @@ import com.kamalkumar.cloudcm.helper.SessionManager;
 
 import java.util.HashMap;
 
-public class HomeActivity extends AppCompatActivity {
-    private TextView txtName;
+public class HomeActivity extends BaseSlideMenuActivity {
+   private TextView txtName;
     private TextView txtEmail;
     private Button btnLogout;
 
@@ -25,6 +23,7 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        setCustomTitle("Home");
         txtName = (TextView) findViewById(R.id.name);
         txtEmail = (TextView) findViewById(R.id.email);
         btnLogout = (Button) findViewById(R.id.btnLogout);
@@ -63,7 +62,7 @@ public class HomeActivity extends AppCompatActivity {
      * Logging out the user. Will set isLoggedIn flag to false in shared
      * preferences Clears the user data from sqlite users table
      * */
-    private void logoutUser() {
+    protected void logoutUser() {
         session.setLogin(false);
 
         db.deleteUsers();
@@ -73,4 +72,5 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
 }
